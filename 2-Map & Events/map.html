@@ -18,6 +18,9 @@
 	
 	<!-- Reference Jquery -->
     <script src="Jquery/jquery-1.11.3.min.js"></script>
+	 
+	  <!-- Reference require.js -->
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 	
     <script>
 
@@ -48,7 +51,7 @@
 
             //map = new esri.Map("map", {basemap: "streets",center: [-88.147219, 41.780608],zoom: 16});
 
-            var basemap = new Tiled("http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",{id:"Basemap"});     // initializing the basemap with topographic tiled map
+            var basemap = new Tiled("https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",{id:"Basemap"});     // initializing the basemap with topographic tiled map
             
             dynamicLayer = new Dynamic(dynamicLayerUrl,{id:"OverlayMap"});   // initilizing the dynamic map with dynamicLayerUrl Map Service
 			
