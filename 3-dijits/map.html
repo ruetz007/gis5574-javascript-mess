@@ -8,15 +8,17 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
     <title>Dijits</title>
 
-    <link rel="stylesheet" href="http://js.arcgis.com/3.14/dijit/themes/claro/claro.css">
-    <link rel="stylesheet" href="http://js.arcgis.com/3.14/esri/css/esri.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.14/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.14/esri/css/esri.css">
     <link rel="stylesheet" href="css/layout.css"/>
 
    <!-- Reference ArcGIS JavaScript API CDN -->
-    <script src="http://js.arcgis.com/3.14/"></script>
+    <script src="https://js.arcgis.com/3.14/"></script>
 	
 	<!-- Reference Jquery -->
     <script src="Jquery/jquery-1.11.3.min.js"></script>
+	  
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 
     <script>
 
@@ -45,7 +47,7 @@
 					$(document).ready(initializeJquery);
 				});
 
-				var basemap = new Tiled("http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",{id:"Basemap"});     // initializing the basemap with topographic tiled map
+				var basemap = new Tiled("https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",{id:"Basemap"});     // initializing the basemap with topographic tiled map
 
 				dynamicLayer = new Dynamic(dynamicLayer,{id:"OverlayMap"});   // initilizing the dynamic map with dynamicLayerUrl Map Service
 
